@@ -1,0 +1,17 @@
+{
+  "name": "biblioteca-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "domain",
+    "apps/backend"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces",
+    "test:domain": "npm run test -w domain",
+    "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
